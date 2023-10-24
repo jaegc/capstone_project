@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:external_app_launcher/external_app_launcher.dart';
 
 void main() {
   runApp(MyApp());
@@ -102,36 +103,199 @@ class AppsToDownload extends StatelessWidget {
       appBar: AppBar(
         title: Text('Apps to Download'),
       ),
-      body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
+      body: ListView(
+        padding: const EdgeInsets.all(8),
+        children: <Widget>[
           Container(
-            width: 100,
-            color: Color(0xFFAF0000),
-          ), //App 1
-
-        ], // children
-      ), //row
-
-
-      /*Container(
-        child: Align(
-          alignment: Alignment.bottomCenter,
-          child: ElevatedButton(
-            onPressed: () {
-              // Implement the logic for what should happen when the button is pressed.
-              // You can use Navigator to navigate back to the home page, for example.
-              Navigator.of(context).pop();
-            },
-            style: ElevatedButton.styleFrom(
-              primary: Color(0xFFAF0000), // Cardinal Red color
-              padding: EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+            height: 129,
+            color: Color(0xA1AF0000),
+            child: Align(
+              alignment: Alignment.centerLeft, // Align the contents to the left
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      width: 135, // Set the width to your desired size
+                      height: 129, // Set the height to your desired size
+                      child: Image(
+                        image: AssetImage('assets/Images/CardsMobile0.jpg'),
+                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        await LaunchApp.openApp(
+                          androidPackageName: 'com.sidearmsports.fanapp.louisville', // Correct package name
+                          openStore: true,
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.black, // Change the color to your desired color
+                      ),
+                      child: const Text('Open CardsMobile App'),
+                    ), // ElevatedButton
+                  ), // Center
+                ],
+              ),
             ),
-            child: Text('Go back to home page'),
           ),
 
-        ),
-      ),*/
+
+          Container(
+            height: 129,
+            color: Color(0xA1AF0000),
+            child: Align(
+              alignment: Alignment.centerLeft, // Align the contents to the left
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      width: 135, // Set the width to your desired size
+                      height: 129, // Set the height to your desired size
+                      child: Image(
+                        image: AssetImage('assets/Images/UofLEvents.jpg'),
+                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        await LaunchApp.openApp(
+                          androidPackageName: 'com.localist.tailgate.louisville', // Correct package name
+                          openStore: true,
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.black, // Change the color to your desired color
+                      ),
+                      child: const Text('Open UofL Events App'),
+                    ), // ElevatedButton
+                  ), // Center
+                ],
+              ),
+            ),
+          ),
+          Container(
+            height: 129,
+            color: Color(0xA1AF0000),
+            child: Align(
+              alignment: Alignment.centerLeft, // Align the contents to the left
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      width: 135, // Set the width to your desired size
+                      height: 129, // Set the height to your desired size
+                      child: Image(
+                        image: AssetImage('assets/Images/CardsMobile7.jpg'),
+                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        await LaunchApp.openApp(
+                          androidPackageName: 'com.sidearmsports.fanapp.louisville', // Correct package name
+                          openStore: true,
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.black, // Change the color to your desired color
+                      ),
+                      child: const Text('Open CardsMobile App'),
+                    ), // ElevatedButton
+                  ), // Center
+                ],
+              ),
+            ),
+          ),
+          Container(
+            height: 129,
+            color: Color(0xA1AF0000),
+            child: Align(
+              alignment: Alignment.centerLeft, // Align the contents to the left
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      width: 135, // Set the width to your desired size
+                      height: 129, // Set the height to your desired size
+                      child: Image(
+                        image: AssetImage('assets/Images/CardsMobile7.jpg'),
+                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        await LaunchApp.openApp(
+                          androidPackageName: 'com.sidearmsports.fanapp.louisville', // Correct package name
+                          openStore: true,
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.black, // Change the color to your desired color
+                      ),
+                      child: const Text('Open CardsMobile App'),
+                    ), // ElevatedButton
+                  ), // Center
+                ],
+              ),
+            ),
+          ),
+          Container(
+            height: 129,
+            color: Color(0xA1AF0000),
+            child: Align(
+              alignment: Alignment.centerLeft, // Align the contents to the left
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      width: 135, // Set the width to your desired size
+                      height: 129, // Set the height to your desired size
+                      child: Image(
+                        image: AssetImage('assets/Images/CardsMobile7.jpg'),
+                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                      ),
+                    ),
+                  ),
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () async {
+                        await LaunchApp.openApp(
+                          androidPackageName: 'com.sidearmsports.fanapp.louisville', // Correct package name
+                          openStore: true,
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        primary: Colors.black, // Change the color to your desired color
+                      ),
+                      child: const Text('Open CardsMobile App'),
+                    ), // ElevatedButton
+                  ), // Center
+                ],
+              ),
+            ),
+          ),
+
+        ],
+      )
     );
   }
 }
