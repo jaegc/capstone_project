@@ -32,6 +32,7 @@ dependencies:
     sdk: flutter
 
   external_app_launcher: ^3.1.0
+  launch_app_store: ^1.0.2
 
 
 
@@ -65,7 +66,10 @@ flutter:
   assets:
       - assets/Images/CardsMobile0.jpg
       - assets/Images/UofLEvents.jpg
-  #   - images/a_dot_ham.jpeg
+      - assets/Images/UofLHealth.jpg
+      - assets/Images/UofLClub.jpg
+      - assets/Images/UofLFootball.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

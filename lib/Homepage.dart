@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:external_app_launcher/external_app_launcher.dart';
+import 'package:launch_app_store/launch_app_store.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -108,20 +110,25 @@ class AppsToDownload extends StatelessWidget {
         children: <Widget>[
           Container(
             height: 129,
-            color: Color(0xA1AF0000),
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: Colors.black,
+              ),
+            ),
             child: Align(
               alignment: Alignment.centerLeft, // Align the contents to the left
               child: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    padding: EdgeInsets.all(16.0),
                     child: Container(
                       alignment: Alignment.centerLeft,
-                      width: 135, // Set the width to your desired size
-                      height: 129, // Set the height to your desired size
+                      width: 135,
+                      height: 129,
                       child: Image(
                         image: AssetImage('assets/Images/CardsMobile0.jpg'),
-                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
@@ -129,38 +136,44 @@ class AppsToDownload extends StatelessWidget {
                     child: ElevatedButton(
                       onPressed: () async {
                         await LaunchApp.openApp(
-                          androidPackageName: 'com.sidearmsports.fanapp.louisville', // Correct package name
+                          androidPackageName: 'com.sidearmsports.fanapp.louisville',
                           openStore: true,
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.black, // Change the color to your desired color
+                        primary: Colors.black,
                       ),
-                      child: const Text('Open CardsMobile App'),
+                      child: const Text('Android: Open CardsMobile',
+                      style: TextStyle(
+                        fontSize: 12,
+                      )),
                     ), // ElevatedButton
                   ), // Center
                 ],
               ),
             ),
           ),
-
-
           Container(
             height: 129,
-            color: Color(0xA1AF0000),
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: Colors.black,
+              ),
+            ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    padding: EdgeInsets.all(16.0),
                     child: Container(
                       alignment: Alignment.centerLeft,
-                      width: 135, // Set the width to your desired size
-                      height: 129, // Set the height to your desired size
+                      width: 135,
+                      height: 129,
                       child: Image(
                         image: AssetImage('assets/Images/UofLEvents.jpg'),
-                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
@@ -173,9 +186,12 @@ class AppsToDownload extends StatelessWidget {
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.black, // Change the color to your desired color
+                        primary: Colors.black,
                       ),
-                      child: const Text('Open UofL Events App'),
+                      child: const Text('Android: Open UofL Events',
+                          style: TextStyle(
+                            fontSize: 12.5,
+                          )),
                     ), // ElevatedButton
                   ), // Center
                 ],
@@ -184,35 +200,42 @@ class AppsToDownload extends StatelessWidget {
           ),
           Container(
             height: 129,
-            color: Color(0xA1AF0000),
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: Colors.black,
+              ),
+            ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    padding: EdgeInsets.all(16.0),
                     child: Container(
                       alignment: Alignment.centerLeft,
-                      width: 135, // Set the width to your desired size
-                      height: 129, // Set the height to your desired size
+                      width: 135,
+                      height: 129,
                       child: Image(
-                        image: AssetImage('assets/Images/CardsMobile7.jpg'),
-                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                        image: AssetImage('assets/Images/UofLHealth.jpg'),
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
                   Center(
                     child: ElevatedButton(
                       onPressed: () async {
-                        await LaunchApp.openApp(
-                          androidPackageName: 'com.sidearmsports.fanapp.louisville', // Correct package name
-                          openStore: true,
+                        await LaunchReview.launch(
+                          iOSAppId: '1608015861',
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.black, // Change the color to your desired color
+                        primary: Colors.black,
                       ),
-                      child: const Text('Open CardsMobile App'),
+                      child: const Text('IOS: Open UofL Health',
+                          style: TextStyle(
+                            fontSize: 14,
+                          )),
                     ), // ElevatedButton
                   ), // Center
                 ],
@@ -221,35 +244,42 @@ class AppsToDownload extends StatelessWidget {
           ),
           Container(
             height: 129,
-            color: Color(0xA1AF0000),
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: Colors.black,
+              ),
+            ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    padding: EdgeInsets.all(16.0),
                     child: Container(
                       alignment: Alignment.centerLeft,
-                      width: 135, // Set the width to your desired size
-                      height: 129, // Set the height to your desired size
+                      width: 135,
+                      height: 129,
                       child: Image(
-                        image: AssetImage('assets/Images/CardsMobile7.jpg'),
-                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                        image: AssetImage('assets/Images/UofLClub.jpg'),
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
                   Center(
                     child: ElevatedButton(
                       onPressed: () async {
-                        await LaunchApp.openApp(
-                          androidPackageName: 'com.sidearmsports.fanapp.louisville', // Correct package name
-                          openStore: true,
+                        await LaunchReview.launch(
+                          iOSAppId: '585665497',
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.black, // Change the color to your desired color
+                        primary: Colors.black,
                       ),
-                      child: const Text('Open CardsMobile App'),
+                      child: const Text('IOS: Open UofL Club',
+                          style: TextStyle(
+                            fontSize: 15,
+                          )),
                     ), // ElevatedButton
                   ), // Center
                 ],
@@ -258,42 +288,48 @@ class AppsToDownload extends StatelessWidget {
           ),
           Container(
             height: 129,
-            color: Color(0xA1AF0000),
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: Colors.black,
+              ),
+            ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(16.0), // Adjust the padding as needed
+                    padding: EdgeInsets.all(16.0),
                     child: Container(
                       alignment: Alignment.centerLeft,
-                      width: 135, // Set the width to your desired size
-                      height: 129, // Set the height to your desired size
+                      width: 135,
+                      height: 129,
                       child: Image(
-                        image: AssetImage('assets/Images/CardsMobile7.jpg'),
-                        fit: BoxFit.cover, // You can adjust the fit property as needed
+                        image: AssetImage('assets/Images/UofLFootball.jpg'),
+                        fit: BoxFit.cover,
                       ),
                     ),
                   ),
                   Center(
                     child: ElevatedButton(
                       onPressed: () async {
-                        await LaunchApp.openApp(
-                          androidPackageName: 'com.sidearmsports.fanapp.louisville', // Correct package name
-                          openStore: true,
+                        await LaunchReview.launch(
+                          iOSAppId: '1476764946',
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        primary: Colors.black, // Change the color to your desired color
+                        primary: Colors.black,
                       ),
-                      child: const Text('Open CardsMobile App'),
+                      child: const Text('IOS: Open UofL Club',
+                          style: TextStyle(
+                            fontSize: 15,
+                          )),
                     ), // ElevatedButton
                   ), // Center
-                ],
+             ],
               ),
             ),
           ),
-
         ],
       )
     );
