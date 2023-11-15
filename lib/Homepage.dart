@@ -30,6 +30,112 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ListView(
+        children: <Widget>[
+          // Container for the header
+          Container(
+            height: 80,
+            decoration: BoxDecoration(
+              color: Colors.red[100],
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                // RichText for the text and arrow icon
+                RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.red[900],
+                      fontWeight: FontWeight.bold,
+                    ),
+                    children: [
+                      TextSpan(text: '  Apps To Download'),
+                    ],
+                  ),
+                ), // RichText
+                SizedBox(width: 50),
+                // ElevatedButton for navigation
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => AppsToDownload(),
+                      ),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.red[900], // Set your desired button color
+                    onPrimary: Colors.red[300]?.withOpacity(0.5), // Adjust alpha value (0.0 to 1.0)
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.arrow_forward, color: Colors.white), // Right-pointing arrow icon
+                    ],
+                  ),
+                ), // ElevatedButton
+              ],
+            ),
+          ),
+          Container(
+            height: 80,
+            decoration: BoxDecoration(
+              color: Colors.red[100],
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                // RichText for the text and arrow icon
+                RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.red[900],
+                      fontWeight: FontWeight.bold,
+                    ),
+                    children: [
+                      TextSpan(text: '  Things To Do'),
+                    ],
+                  ),
+                ), // RichText
+                SizedBox(width: 124),
+                // ElevatedButton for navigation
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => ThingsToDo(),
+                      ),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.red[900], // Set your desired button color
+                    onPrimary: Colors.red[300]?.withOpacity(0.5), // Adjust alpha value (0.0 to 1.0)
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.arrow_forward, color: Colors.white), // Right-pointing arrow icon
+                    ],
+                  ),
+                ), // ElevatedButton
+              ],
+            ),
+          ),
+
+
+
+        ],
+      ),
+    );
+  }
+}
+
+
+
+  /*
   String currentPage = 'Health Resources'; // Default page
 
   void changePage(String page) {
@@ -37,6 +143,7 @@ class _HomeState extends State<Home> {
       currentPage = page;
     });
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -114,7 +221,7 @@ class _HomeState extends State<Home> {
       ],
     );
   }
-  }
+  }*/
 
 class ThingsToDo extends StatelessWidget {
   @override
@@ -1031,6 +1138,7 @@ class AppsToDownload extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(8),
         children: <Widget>[
+
           Container(
             height: 129,
             decoration: BoxDecoration(
