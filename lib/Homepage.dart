@@ -124,6 +124,50 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
+          Container(
+            height: 80,
+            decoration: BoxDecoration(
+              color: Colors.red[100],
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                // RichText for the text and arrow icon
+                RichText(
+                  text: TextSpan(
+                    style: TextStyle(
+                      fontSize: 30,
+                      color: Colors.red[900],
+                      fontWeight: FontWeight.bold,
+                    ),
+                    children: [
+                      TextSpan(text: '  Health Resources'),
+                    ],
+                  ),
+                ), // RichText
+                SizedBox(width: 60),
+                // ElevatedButton for navigation
+                ElevatedButton(
+                  onPressed: () {
+                    Navigator.of(context).push(
+                      MaterialPageRoute(
+                        builder: (context) => HealthServicesSubjects(),
+                      ),
+                    );
+                  },
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.red[900], // Set your desired button color
+                    onPrimary: Colors.red[300]?.withOpacity(0.5), // Adjust alpha value (0.0 to 1.0)
+                  ),
+                  child: Row(
+                    children: [
+                      Icon(Icons.arrow_forward, color: Colors.white), // Right-pointing arrow icon
+                    ],
+                  ),
+                ), // ElevatedButton
+              ],
+            ),
+          ),
 
 
 
@@ -222,7 +266,100 @@ class _HomeState extends State<Home> {
     );
   }
   }*/
+class HealthServicesSubjects extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        SubjectCard(title: 'Campus Safety', content: 'Content for Campus Safety page goes here.'),
+        SubjectCard(title: 'Concern Center', content: 'Content for Concern Center page goes here.'),
+        SubjectCard(title: 'Counseling Center', content: 'Content for Counseling Center page goes here.'),
+        SubjectCard(title: 'Emergency Text Alerts', content: 'Content for Emergency Text Alerts page goes here.'),
+        SubjectCard(title: 'Emergency Procedures', content: 'Content for Emergency Procedures page goes here.'),
+        SubjectCard(title: 'Escort Service', content: 'Content for Escort Service page goes here.'),
+        SubjectCard(title: 'HSC Counseling Services', content: 'Content for HSC Counseling Services page goes here.'),
+        SubjectCard(title: 'Student Health Services', content: 'Content for Student Health Services page goes here.'),
+        SubjectCard(title: 'ULPD', content: 'Content for ULPD page goes here.'),
+      ],
+    );
+  }
+}
 
+class SubjectCard extends StatelessWidget {
+  final String title;
+  final String content;
+
+  const SubjectCard({required this.title, required this.content});
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      margin: EdgeInsets.all(16.0),
+      child: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: TextStyle(
+                fontSize: 20.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 8.0),
+            Text(content),
+            SizedBox(height: 16.0),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SubjectDetailPage(title: title, content: content),
+                  ),
+                );
+              },
+              child: Text('Open Page'),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
+
+class SubjectDetailPage extends StatelessWidget {
+  final String title;
+  final String content;
+
+  const SubjectDetailPage({required this.title, required this.content});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              title,
+              style: TextStyle(
+                fontSize: 24.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(height: 16.0),
+            Text(content),
+          ],
+        ),
+      ),
+    );
+  }
+}
 class ThingsToDo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
