@@ -83,6 +83,8 @@ flutter:
       - assets/Images/SRCSports.jpg
       - assets/Images/uoflfun.jpg
       - assets/Images/uoflevents0.jpg
+      - assets/Images/univhousing.jpg
+      - assets/Images/affhousing.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -10,6 +10,7 @@ class ThingsToDo extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Things To Do'),
+        backgroundColor: Colors.black
       ),
       body: ListView(
         children: <Widget>[

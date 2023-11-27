@@ -10,6 +10,7 @@ class AppsToDownload extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('Apps to Download'),
+          backgroundColor: Colors.black
         ),
         body: ListView(
           padding: const EdgeInsets.all(8),
