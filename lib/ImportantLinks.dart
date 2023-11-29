@@ -15,15 +15,14 @@ class ImportantLinks extends StatelessWidget {
 }
 
 class ImportantLinksPage extends StatelessWidget {
-  // Function to launch URLs
+  // Function to open URLs
   Future<void> openUrl(String url) async {
     final _url = Uri.parse(url);
-    if (!await launchUrl(_url, mode: LaunchMode.externalApplication)) { // <--
+    if (!await launchUrl(_url, mode: LaunchMode.externalApplication)) {
       throw Exception('Could not launch $_url');
     }
   }
 
-  // Expansion tile widget for each category
   Widget _buildExpansionTile(BuildContext context, String title,
       List<Map<String, String>> links) {
     return Theme(
@@ -37,13 +36,11 @@ class ImportantLinksPage extends StatelessWidget {
               .headline6!
               .copyWith(
             fontSize: 35.0,
-            // Font size for the dropdown header text
             fontWeight: FontWeight.bold,
-            // Bold font for the dropdown header text
-            color: Colors.red, // Red color for the dropdown header text
+            color: Colors.red,
           ),
         ),
-        iconColor: Colors.red, // Set the color for the dropdown arrow
+        iconColor: Colors.red,
         children: links.map((link) {
           return ListTile(
             title: Text(
@@ -53,7 +50,7 @@ class ImportantLinksPage extends StatelessWidget {
                   .textTheme
                   .bodyText2!
                   .copyWith(
-                fontSize: 16.0, // Font size for the link text
+                fontSize: 16.0,
               ),
             ),
             onTap: () => openUrl(link.values.first),

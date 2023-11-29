@@ -29,9 +29,8 @@ class _HomeState extends State<Home> {
     return Scaffold(
       body: Row(
         children: [
-          // Column 1 with long text
           Container(
-            width: 300, // Adjust the width as needed
+            width: 300,
             color: Colors.white,
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -45,7 +44,6 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
-          // Column 2 with arrow buttons
           Expanded(
             child: Container(
               color: Colors.white,
@@ -83,9 +81,9 @@ class _HomeState extends State<Home> {
 
   Widget buildArrowButton(Widget page) {
     return Container(
-      height: 40, // Adjust the height as needed
-      width: 80,  // Adjust the width as needed
-      margin: EdgeInsets.all(18),// Adjust the margin as needed
+      height: 40,
+      width: 80,
+      margin: EdgeInsets.all(18),
       child: ElevatedButton(
         onPressed: () {
           Navigator.of(context).push(
@@ -95,7 +93,7 @@ class _HomeState extends State<Home> {
           );
         },
         style: ElevatedButton.styleFrom(
-          primary: Colors.red, // Set your desired button color
+          primary: Colors.red,
           onPrimary: Colors.red?.withOpacity(0.5),
         ),
         child: Icon(Icons.arrow_forward, color: Colors.white),

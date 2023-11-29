@@ -35,7 +35,7 @@ class UniversityHousingInfo extends StatelessWidget {
               children: [
                 Text(
                   '• ',
-                  style: TextStyle(fontSize: 16.0), // Bullet point
+                  style: TextStyle(fontSize: 16.0),
                 ),
                 Expanded(
                   child: Text(
@@ -96,7 +96,6 @@ class UniversityHousingInfo extends StatelessWidget {
                   'Free Wifi & Laundry',
                 ],
               },
-              // Add other traditional halls similarly
               {
                 'name': 'Belknap Village South',
                 'details': [
@@ -137,7 +136,6 @@ class UniversityHousingInfo extends StatelessWidget {
                   'Laundry on the first floor',
                 ],
               },
-              // Add other suite-style halls similarly
               {
                 'name': 'Community Park',
                 'details': [
@@ -240,7 +238,6 @@ class UniversityHousingInfo extends StatelessWidget {
               },
             ]),
             SizedBox(height: 16.0),
-            // New Expansion Lists
             _buildHousingOption(context, 'RAs and ACs', [
               {
                 'name': 'Resident Assistants (RAs)',

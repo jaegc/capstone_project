@@ -15,7 +15,6 @@ class ResidentLife extends StatelessWidget {
           Expanded(
             child: GestureDetector(
               onTap: () {
-                // Navigate to the University Housing page
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => UniversityHousing()));
               },
@@ -57,7 +56,6 @@ class ResidentLife extends StatelessWidget {
           Expanded(
             child: GestureDetector(
               onTap: () {
-                // Navigate to the Off-Campus Housing page
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => OffCampusHousing()));
               },

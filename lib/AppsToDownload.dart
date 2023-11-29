@@ -25,7 +25,7 @@ class AppsToDownload extends StatelessWidget {
                 ),
               ),
               child: Align(
-                alignment: Alignment.centerLeft, // Align the contents to the left
+                alignment: Alignment.centerLeft,
                 child: Row(
                   children: [
                     Padding(
@@ -55,8 +55,8 @@ class AppsToDownload extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12,
                             )),
-                      ), // ElevatedButton
-                    ), // Center
+                      ),
+                    ),
                   ],
                 ),
               ),

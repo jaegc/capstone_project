@@ -15,7 +15,7 @@ class MainApp extends StatelessWidget {
           title: Text('Cardinal Resources App'),
           backgroundColor: Colors.black,
         ),
-        backgroundColor: Colors.red, // Set the background color to red
+        backgroundColor: Colors.red,
         body: MainScreen(),
       ),
     );
@@ -33,8 +33,8 @@ class MainScreen extends StatelessWidget {
           children: [
             Container(
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.7), // White box with opacity
-                borderRadius: BorderRadius.circular(15.0), // Rounded corners
+                color: Colors.white.withOpacity(0.7),
+                borderRadius: BorderRadius.circular(15.0),
               ),
               padding: EdgeInsets.all(20.0),
               child: Text(
@@ -53,11 +53,11 @@ class MainScreen extends StatelessWidget {
                 );
               },
               style: ElevatedButton.styleFrom(
-                primary: Colors.black, // Set button color to black
+                primary: Colors.black,
                 onPrimary: Colors.white,
-                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40), // Set button padding
+                padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15.0), // Rounded corners for the button
+                  borderRadius: BorderRadius.circular(15.0),
                 ),
               ),
               child: Text(

@@ -49,7 +49,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -106,7 +106,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -130,11 +130,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://www.derbymuseum.org/plan-a-visit/general-information.html'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -150,8 +150,8 @@ class ThingsToDo extends StatelessWidget {
                   ),
                   // Center
                 ], // children
-              ), // Row
-            ), // Align
+              ),
+            ),
           ),
 
           Container(
@@ -163,7 +163,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -187,11 +187,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://www.sluggermuseum.com/visit'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -207,8 +207,8 @@ class ThingsToDo extends StatelessWidget {
                   ),
                   // Center
                 ], // children
-              ), // Row
-            ), // Align
+              ),
+            ),
           ),
 
           Container(
@@ -220,7 +220,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -244,11 +244,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://www.kmacmuseum.org/hours-and-location'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -264,8 +264,8 @@ class ThingsToDo extends StatelessWidget {
                   ),
                   // Center
                 ], // children
-              ), // Row
-            ), // Align
+              ),
+            ),
           ),
 
 
@@ -278,7 +278,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -302,11 +302,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://alicenter.org/visit/'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -336,7 +336,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -360,11 +360,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://portlandky.org/visit/'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -419,11 +419,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://www.conradcaldwell.org/'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -478,7 +478,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -502,11 +502,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://gocards.com/facilities/bass-rudd-tennis-center/2'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -535,7 +535,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -559,11 +559,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://louisville.edu/intramurals/sports-clubs'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -593,7 +593,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -617,11 +617,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://louisville.edu/intramurals/fitness/personal-training'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -651,7 +651,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -675,11 +675,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://louisville.edu/intramurals/'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -709,7 +709,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -733,11 +733,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://www.alltrails.com/us/kentucky/louisville/paved'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -794,7 +794,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -818,11 +818,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://louisville.edu/involvement/covid-19-resources/fun-things-to-do'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -852,7 +852,7 @@ class ThingsToDo extends StatelessWidget {
               ),
             ),
             child: Align(
-              alignment: Alignment.centerLeft, // Align the contents to the left
+              alignment: Alignment.centerLeft,
               child: Row(
                 children: [
                   Padding(
@@ -876,11 +876,11 @@ class ThingsToDo extends StatelessWidget {
                           uri: Uri.parse('https://events.louisville.edu/'),
                           builder: (context, followLink) => ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                              primary: Colors.red, // Background color
-                              onPrimary: Colors.white, // Text color
-                              padding: EdgeInsets.all(16), // Button padding
+                              primary: Colors.red,
+                              onPrimary: Colors.white,
+                              padding: EdgeInsets.all(16),
                               shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(10), // Button border radius
+                                borderRadius: BorderRadius.circular(10),
                               ),
                               elevation: 6,
                               minimumSize: Size(25, 0),
@@ -896,9 +896,9 @@ class ThingsToDo extends StatelessWidget {
                   ),
                   // Center
                 ], // children
-              ), // Row
-            ), // Align
-          ), //fun things to do
+              ),
+            ),
+          ),
 
 
         ], //Widget Children
