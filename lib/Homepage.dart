@@ -5,22 +5,15 @@ import 'ImportantLinks.dart';
 import 'ResidentLife.dart';
 import 'HealthServicesSubjects.dart';
 
-void main() {
-  runApp(MyApp());
-}
-
-class MyApp extends StatelessWidget {
+class Homepage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Cardinal Resources App',
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text('Cardinal Resources App'),
           backgroundColor: Colors.black,
         ),
         body: Home(),
-      ),
     );
   }
 }
