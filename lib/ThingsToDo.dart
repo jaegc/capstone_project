@@ -900,6 +900,120 @@ class ThingsToDo extends StatelessWidget {
           ), //fun things to do
 
 
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: Colors.grey,
+              ),
+            ),
+            child: Align(
+              alignment: Alignment.centerLeft, // Align the contents to the left
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      width: 180,
+                      height: 200,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Images/uoflevents0.jpg'),
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 2),
+                  Center(
+                      child: Link(
+                          target: LinkTarget.blank,
+                          uri: Uri.parse('https://louisville.campuslabs.com/engage/organizations'),
+                          builder: (context, followLink) => ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.red, // Background color
+                              onPrimary: Colors.white, // Text color
+                              padding: EdgeInsets.all(16), // Button padding
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10), // Button border radius
+                              ),
+                              elevation: 6,
+                              minimumSize: Size(25, 0),
+                            ),
+                            child: Text('Check out Clubs and Student Organizations',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                )
+                            ),
+                            onPressed: followLink,
+                          )
+                      )
+                  ),
+                  // Center
+                ], // children
+              ), // Row
+            ), // Align
+          ), //fun things to do
+
+
+          Container(
+            height: 100,
+            decoration: BoxDecoration(
+              border: Border.all(
+                width: 2,
+                color: Colors.grey,
+              ),
+            ),
+            child: Align(
+              alignment: Alignment.centerLeft, // Align the contents to the left
+              child: Row(
+                children: [
+                  Padding(
+                    padding: EdgeInsets.all(16.0),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      width: 180,
+                      height: 200,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage('assets/Images/uoflevents0.jpg'),
+                          fit: BoxFit.fill,
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(width: 2),
+                  Center(
+                      child: Link(
+                          target: LinkTarget.blank,
+                          uri: Uri.parse('https://louisville.university-tour.com/main-belknap-campus'),
+                          builder: (context, followLink) => ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              primary: Colors.red, // Background color
+                              onPrimary: Colors.white, // Text color
+                              padding: EdgeInsets.all(16), // Button padding
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(10), // Button border radius
+                              ),
+                              elevation: 6,
+                              minimumSize: Size(25, 0),
+                            ),
+                            child: Text('Check out the interactive campus map',
+                                style: TextStyle(
+                                  fontSize: 15,
+                                )
+                            ),
+                            onPressed: followLink,
+                          )
+                      )
+                  ),
+                  // Center
+                ], // children
+              ), // Row
+            ), // Align
+          ), //fun things to do
         ], //Widget Children
       ),
 
