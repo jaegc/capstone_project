@@ -10,6 +10,7 @@ class AppsToDownload extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('Apps to Download'),
+          backgroundColor: Colors.black
         ),
         body: ListView(
           padding: const EdgeInsets.all(8),
@@ -24,7 +25,7 @@ class AppsToDownload extends StatelessWidget {
                 ),
               ),
               child: Align(
-                alignment: Alignment.centerLeft, // Align the contents to the left
+                alignment: Alignment.centerLeft,
                 child: Row(
                   children: [
                     Padding(
@@ -54,8 +55,8 @@ class AppsToDownload extends StatelessWidget {
                             style: TextStyle(
                               fontSize: 12,
                             )),
-                      ), // ElevatedButton
-                    ), // Center
+                      ),
+                    ),
                   ],
                 ),
               ),
