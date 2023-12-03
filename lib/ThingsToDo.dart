@@ -863,7 +863,7 @@ class ThingsToDo extends StatelessWidget {
                       height: 200,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('assets/Images/uoflevents0.jpg'),
+                          image: AssetImage('assets/Images/UofLEvents.jpg'),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -921,7 +921,7 @@ class ThingsToDo extends StatelessWidget {
                       height: 200,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('assets/Images/uoflevents0.jpg'),
+                          image: AssetImage('assets/Images/UofLClub.jpg'),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -943,7 +943,7 @@ class ThingsToDo extends StatelessWidget {
                               elevation: 6,
                               minimumSize: Size(25, 0),
                             ),
-                            child: Text('Check out Clubs and Student Organizations',
+                            child: Text('Clubs & RSOs',
                                 style: TextStyle(
                                   fontSize: 15,
                                 )
@@ -979,7 +979,7 @@ class ThingsToDo extends StatelessWidget {
                       height: 200,
                       decoration: BoxDecoration(
                         image: DecorationImage(
-                          image: AssetImage('assets/Images/uoflevents0.jpg'),
+                          image: AssetImage('assets/Images/uoflfun.jpg'),
                           fit: BoxFit.fill,
                         ),
                       ),
@@ -1001,7 +1001,7 @@ class ThingsToDo extends StatelessWidget {
                               elevation: 6,
                               minimumSize: Size(25, 0),
                             ),
-                            child: Text('Check out the interactive campus map',
+                            child: Text('Campus Map',
                                 style: TextStyle(
                                   fontSize: 15,
                                 )
