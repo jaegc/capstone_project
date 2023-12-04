@@ -61,6 +61,9 @@ class SubjectCard extends StatelessWidget {
                 );
               },
               child: Text('Open Page'),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.red,
+              ),
             ),
           ],
         ),

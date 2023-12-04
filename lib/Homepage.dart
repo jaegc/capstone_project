@@ -4,6 +4,7 @@ import 'ThingsToDo.dart';
 import 'ImportantLinks.dart';
 import 'ResidentLife.dart';
 import 'HealthServicesSubjects.dart';
+import 'FreshmenNeedToKnow.dart';
 
 class Homepage extends StatelessWidget {
   @override
@@ -41,6 +42,7 @@ class _HomeState extends State<Home> {
                 buildText('Important Links'),
                 buildText('Resident Life'),
                 buildText('Health Resources'),
+                buildText('Freshmen Need To Know'),
               ],
             ),
           ),
@@ -56,6 +58,7 @@ class _HomeState extends State<Home> {
                   buildArrowButton(ImportantLinks()),
                   buildArrowButton(ResidentLife()),
                   buildArrowButton(HealthServicesSubjects()),
+                  buildArrowButton(FreshmenTipsPage()),
                 ],
               ),
             ),
